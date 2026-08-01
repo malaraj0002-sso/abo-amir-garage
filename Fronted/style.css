@@ -1,0 +1,193 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+body {
+  background-image: url('Imges/pexels-joya.jpg');
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+header nav{
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  color: rgb(105, 55, 161);
+  padding: 20px;
+  text-align: center;
+  animation: fadeInDown 1s ease-in-out;
+  animation: scaleUp 0.5s ease-in-out;
+}
+
+.header nav:hover {
+  animation: scaleDown 0.5s ease-in-out;
+  animation: rotate 1s linear infinite;
+}
+
+.primary-text {
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+
+}
+
+.header h1  {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+#navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+#navbar ul li a:hover {
+  color: var(--light);
+}
+
+
+.content h1 {
+  font-size: 2rem;
+  margin: 20px 0;
+  color: var(--secondary);
+  animation: fadeIn 2s ease-in-out;
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: var(--dark);
+}
+
+
+.btn {
+  display: inline-block;
+  background: var(--secondary);
+  color: white;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.btn:hover {
+  background: var(--primary);
+  transform: scale(1.05);
+}
+
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+  background: var(--light);
+  margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+section h2 {
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+
+.bus-items, .truck-items, .car-items {
+  margin: 20px 0;
+}
+
+.bus-items img, .truck-items img, .car-items img {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.bus-items img:hover,
+.truck-items img:hover,
+.car-items img:hover {
+  transform: scale(1.05);
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+form input, form textarea {
+  padding: 10px;
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  transition: border 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+  border-color: var(--primary);
+  outline: none;
+}
+
+
+footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 15px;
+  animation: fadeInUp 2s ease-in-out;
+}
+
+footer a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); }
+  to { transform: scale(1); }
+}
+@keyframes scaleDown {
+  from { transform: scale(1); }
+  to { transform: scale(0.95); }
+}
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}

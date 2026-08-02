@@ -9,16 +9,27 @@
 
 body {
   background-image: url('Imges/pexels-joya.jpg');
-  background-size: 100% 100%;
+  background-size: cover;
   margin: 0;
   padding: 0;
   line-height: 1.5;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeInDown 1s ease-in-out;
+  animation: scaleUp 0.5s ease-in-out;
+  color: white;
+  }
+
 header nav{
+  display: auto;
+  justify-content: space-between;
   background: linear-gradient(to right, var(--primary), var(--secondary));
   color: rgb(105, 55, 161);
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   animation: fadeInDown 1s ease-in-out;
   animation: scaleUp 0.5s ease-in-out;
